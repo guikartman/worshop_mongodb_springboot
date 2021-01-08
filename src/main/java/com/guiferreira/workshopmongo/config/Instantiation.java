@@ -9,6 +9,12 @@ import org.springframework.context.annotation.Configuration;
 import com.guiferreira.workshopmongo.domain.User;
 import com.guiferreira.workshopmongo.repository.UserRepository;
 
+/**
+ * Classe faz a instancia de alguns objetos nas coleções.
+ * 
+ * @author guilherme
+ *
+ */
 @Configuration
 public class Instantiation implements CommandLineRunner {
 
