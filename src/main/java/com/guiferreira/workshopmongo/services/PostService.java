@@ -23,4 +23,8 @@ public class PostService {
 		Optional<Post> optional = repo.findById(id);
 		return optional.orElseThrow(() -> new ObjectNotFoundException("Objeto não foi encontrado"));
 	}
+	
+	public List<Post> findByTitle(String text) {
+		return repo.findByTitleContainingIgnoreCase(text);
+	}
 }
